@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración de metadatos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlaces a hojas de estilo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <!-- Título de la página -->
+    <title>El mejor restaurante</title>
+    <!-- Widget de traducción de Google -->
+    <div id="google_translate_element" class="google"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+	new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+        }
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
+</head>
+<body>
+    <header>
+     <div class="logo">
+        <!-- Título del restaurante -->
+        <h1>REYES DEL MAR </h1>
+        <!-- Lema del restaurante -->
+        <h3>Pasión por los Mariscos</h3>
+     </div>   
+     <nav>
+        <!-- Enlaces de navegación -->
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="selected">Menú</a>
+        <a href="confirmacion.html">Confirmación</a>
+        <a href="ejercicio1.html">Ejercicio 1</a>
+        <a href="ejercicio2.html">Ejercicio 2</a>
+    </nav>
+    </header>
+<h1>Ejercicios JavaScript</h1>
+    <section>
+        <!-- Botones para ejecutar los ejercicios -->
+        <button onclick="esPalindromo()">Ejercicio 1: Palíndromo</button>
+        <button onclick="mostrarMayor()">Ejercicio 2: Mayor de dos números</button>
+        <button onclick="mostrarVocales()">Ejercicio 3: Mostrar Vocales</button>
+        <button onclick="limpiarResultado()">Limpiar Resultados</button>
+        <div id="resultado"></div>
+    </section>
+</body>
+</html>

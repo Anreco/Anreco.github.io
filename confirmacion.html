@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración de metadatos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <!-- Título de la página -->
+    <title>Confirmación</title>
+    <!-- Widget de traducción de Google -->
+    <div id="google_translate_element" class="google"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+	new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+        }
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Título del restaurante -->
+            <h1>REYES DEL MAR</h1>
+            <!-- Lema del restaurante -->
+            <h3>Pasión por los Mariscos</h3>
+        </div>
+        <nav>
+            <!-- Enlaces de navegación -->
+            <a href="index.html">Home</a>
+            <a href="menu.html" class="selected">Menú</a>
+            <a href="confirmacion.html">Confirmación</a>
+            <a href="ejercicio1.html">Ejercicio 1</a>
+            <a href="ejercicio2.html">Ejercicio 2</a>
+        </nav>      
+    </header>
+
+    <section id="confirmacion">
+        <h1>Confirmación de Reserva</h1>
+        <p>Por favor, proporcione los siguientes detalles para confirmar su reserva.</p>
+
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombres">Nombres:</label>
+             <!-- Campo de entrada de nombres -->
+            <input type="text" id="nombres" name="nombres" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <!-- Campo de entrada de apellidos -->
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <!-- Campo de entrada de correo electrónico -->
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="fecha">Fecha de Reserva:</label>
+            <!-- Campo de entrada de fecha de reserva -->
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="personas">Número de Personas:</label>
+            <!-- Campo de entrada del número de personas -->
+            <input type="number" id="personas" name="personas" required>
+
+            <!-- Botón para confirmar la reserva -->
+            <button type="submit">Confirmar Reserva</button>
+        </form>
+    </section>
+</body>
+</html>
