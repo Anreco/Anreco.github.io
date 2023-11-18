@@ -39,10 +39,14 @@ function mostrarContenidos() {
     xhr.addEventListener("error", function () {
         // Mostrar un mensaje de error en la zona de Estados
         document.getElementById("estados").innerHTML = "Hubo un error al realizar la petición. Detalles: " + xhr.statusText;
+
+        // Eliminar el mensaje de "Cargando..." en caso de error
+        document.getElementById("estados").innerHTML = "";
     });
 
     // Realizar la petición AJAX
     xhr.send();
 }
+
 
 
